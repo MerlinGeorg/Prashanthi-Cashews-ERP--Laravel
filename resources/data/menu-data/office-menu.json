@@ -1,0 +1,335 @@
+{
+    "menu": [
+    {
+        "name": "Dashboard",
+        "icon": "home",
+        "slug": "dashboard",
+        "url": "/admin"
+    },
+    {
+      "name": "Manage",
+      "icon": "command",
+      "dropdown": "1",
+      "slug": "admin.manage.*",
+      "submenu": [
+        {
+          "url": "admin/office",
+          "name": "Office",
+          "icon": "home",
+          "slug": "admin.office.*",
+          "acl": "office-office-view"
+        },
+        {
+          "url": "admin/account",
+          "name": "Account",
+          "icon": "dollar-sign",
+          "slug": "admin.account.*",
+          "acl": "office-account-view"
+        },
+        {
+          "url": "admin/stockyard",
+          "name": "Stockyard",
+          "icon": "archive",
+          "slug": "admin.stockyard.*",
+          "acl": "office-stockyard-view"
+        },
+        {
+          "url": "admin/factory",
+          "name": "Factory",
+          "icon": "server",
+          "slug": "admin.factory.*",
+          "acl": "office-factory-view"
+        },
+        {
+          "url": "admin/package-center",
+          "name": "Package Center",
+          "icon": "package",
+          "slug": "admin.package-center.*",
+          "acl": "office-package-center-view"
+        },
+        {
+          "url": "admin/shipper-details",
+          "name": "Shipper Details",
+          "icon": "align-left",
+          "slug": "admin.shipper-details.*",
+          "acl": "office-shipper-details-view"
+        },
+        {
+          "url": "admin/staff",
+          "name": "Staff",
+          "icon": "user",
+          "slug": "admin.staff.*",
+          "acl": "office-staff-view"
+        },
+        {
+          "url": "admin/employee",
+          "name": "Employee",
+          "icon": "user",
+          "slug": "admin.employee.*",
+          "acl": "office-employee-view"
+        },
+        {
+          "name": "ACL",
+          "icon": "share-2",
+          "slug": "admin.acl",
+          "acl" : "super-admin,office-role-view,office-role-privilege-view",
+          "submenu":[              
+                {
+                    "url": "admin/resource",
+                    "name": "Resource",
+                    "icon": "droplet",
+                    "slug": "admin.resource",
+                    "acl": "super-admin"
+                },
+                {
+                    "url": "admin/permission",
+                    "name": "Permission",
+                    "icon": "droplet",
+                    "slug": "admin.permission",
+                    "acl": "super-admin"
+                },
+                {
+                    "url": "admin/role",
+                    "name": "Role",
+                    "icon": "droplet",
+                    "slug": "admin.role",
+                    "acl": "office-role-view"
+                }
+            ]
+        },
+        {
+            "name": "Settings",
+            "icon": "settings",
+            "slug": "admin.settings",
+            "acl" : "super-admin,office-user-group-view,office-job-category-view",
+            "submenu":[              
+                {
+                    "url": "admin/usergroup",
+                    "name": "User Group",
+                    "icon": "droplet",
+                    "slug": "admin.usergroup",
+                    "acl": "super-admin,office-user-group-view"
+                },
+                {
+                    "url": "admin/jobcategory",
+                    "name": "Job Category",
+                    "icon": "droplet",
+                    "slug": "admin.jobcategory",
+                    "acl": "super-admin,office-job-category-view"
+                }
+            ]
+        }
+      ]
+    },
+    {
+        "name": "Stockyard",
+        "icon": "archive",
+        "dropdown": "1",
+        "slug": "",
+        "submenu": [
+            {
+                "name": "Manage",
+                "icon": "command",
+                "slug": "",
+                "submenu":[
+                    {
+                        "url": "/stockyard/employee",
+                        "name": "Employee",
+                        "icon": "users",
+                        "slug": "stockyard.employee.*",
+                        "acl": "stockyard-employee-view"
+                    }
+                ]
+            },               
+            {
+            "name": "Stock",
+            "icon": "database",
+            "slug": "",
+            "submenu":[
+                    {
+                        "url": "stockyard/rcn-stock",
+                        "name": "RCN",
+                        "icon": "droplet",
+                        "slug": "stockyard.rcn-stock.*",
+                        "acl": "stockyard-rcn-view"
+                    }
+                ]
+            },
+            {
+            "url": "admin/stockyard/transfer",
+            "name": "Transfer",
+            "icon": "truck",
+            "slug": "",
+            "submenu":[
+                    {
+                        "url": "stockyard/inward-rcn",
+                        "name": "Inward RCN",
+                        "icon": "droplet",
+                        "slug": "stockyard.inward-rcn.*",
+                        "acl": "stockyard-inward-rcn-view"
+                    },
+                    {
+                        "url": "stockyard/outward-rcn",
+                        "name": "Outward RCN",
+                        "icon": "droplet",
+                        "slug": "stockyard.outward-rcn.*",
+                        "acl": "stockyard-outward-rcn-view"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Factory",
+        "icon": "server",
+        "dropdown": "1",
+        "slug": "",
+        "submenu": [
+            {
+                "name": "Manage",
+                "icon": "command",
+                "slug": "",
+                "submenu":[
+                    {
+                        "url": "/factory/employee",
+                        "name": "Employee",
+                        "icon": "users",
+                        "slug": "factory.employee.*",
+                        "acl": "factory-employee-view"
+                    }
+                ]
+            },   
+            {
+            "url": "admin/factory/transfer",
+            "name": "Transfer",
+            "icon": "truck",
+            "slug": "",
+            "submenu":[
+                    {
+                        "url": "factory/factory-rcn-inward",
+                        "name": "Inward RCN",
+                        "icon": "droplet",
+                        "slug": "factory.factory-rcn-inward.*",
+                        "acl": "factory-inward-rcn-view"
+                    }
+                ]
+            },
+            {
+            "url": "admin/facotry/purchase",
+            "name": "Purchase",
+            "icon": "check-square",
+            "slug": "app-chat"
+            },
+            {
+            "name": "Stock",
+            "icon": "database",
+            "slug": "app-todo",
+            "submenu":[
+                    {
+                        "url": "factory/rcn-stock",
+                        "name": "RCN",
+                        "icon": "droplet",
+                        "slug": "factory.rcn-stock.*",
+                        "acl": "factory-rcn-view"
+                    },
+                    {
+                        "url": "factory/stock/sizering",
+                        "name": "Sizering",
+                        "icon": "filter",
+                        "slug": "factory.sizering.*"
+                    },
+                    {
+                        "url": "factory/stock/boiling",
+                        "name": "Boiling",
+                        "icon": "upload-cloud",
+                        "slug": "factory.boiling.*"
+                    },
+                    {
+                        "url": "factory/stock/cutting",
+                        "name": "Cutting",
+                        "icon": "scissors",
+                        "slug": "factory.cutting.*"
+                    },
+                    {
+                        "url": "factory/stock/borma",
+                        "name": "Borma",
+                        "icon": "radio",
+                        "slug": "factory.borma.*"
+                    },
+                    {
+                        "url": "factory/stock/machine-peeling",
+                        "name": "Machine Peeling",
+                        "icon": "hash",
+                        "slug": "factory.machine-peeling.*"
+                    },
+                    {
+                        "url": "factory/stock/sorting",
+                        "name": "Sorting",
+                        "icon": "bar-chart",
+                        "slug": "factory.sorting.*"
+                    },
+                    {
+                        "url": "factory/stock/peeling-pass",
+                        "name": "Peeling Pass",
+                        "icon": "chevrons-right",
+                        "slug": "factory.peeling-pass.*"
+                    },
+                    {
+                        "url": "factory/stock/grading",
+                        "name": "Grading",
+                        "icon": "flag",
+                        "slug": "factory.grading.*"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+      "name": "Package Center",
+      "icon": "package",
+      "dropdown": "1",
+      "slug": "",
+      "submenu": [
+        {
+          "url": "admin/package/transfer",
+          "name": "Transfer",
+          "icon": "truck",
+          "slug": "app-email"
+        },
+        {
+          "url": "admin/package/purchase",
+          "name": "Purchase",
+          "icon": "check-square",
+          "slug": "app-chat"
+        },
+        {
+          "url": "admin/package/quality-analysis",
+          "name": "Quality Analysis",
+          "icon": "eye",
+          "slug": "app-chat"
+        },
+        {
+          "name": "Stock",
+          "icon": "database",
+          "slug": "app-todo",
+          "submenu":[
+                {
+                    "url": "admin/stock/graded-kernels",
+                    "name": "Graded Kernels",
+                    "icon": "git-merge",
+                    "slug": "app-chat"
+                },
+                {
+                    "url": "admin/stock/packed-graded-kernels",
+                    "name": "Packed Graded Kernels",
+                    "icon": "git-pull-request",
+                    "slug": "app-chat"
+                }
+            ]
+        }
+      ]
+    }
+  ]
+}
+
+

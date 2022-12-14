@@ -1,0 +1,61 @@
+{
+    "menu": [
+    {
+        "name": "Dashboard",
+        "icon": "home",
+        "slug": "dashboard",
+        "url": "/admin"
+    },
+    {
+        "name": "Manage",
+        "icon": "package",
+        "dropdown": "1",
+        "slug": "",
+        "submenu":[
+            {
+                "url": "/stockyard/employee",
+                "name": "Employee",
+                "icon": "users",
+                "slug": "stockyard.employee.*",
+                "acl": "stockyard-employee-view"
+            }
+        ]
+    },
+    {
+        "name": "Stock",
+        "icon": "database",
+        "slug": "",
+        "submenu":[
+            {
+                "url": "stockyard/rcn-stock",
+                "name": "RCN",
+                "icon": "droplet",
+                "slug": "stockyard.rcn-stock.*",
+                "acl": "stockyard-rcn-view"
+            }
+        ]
+    },
+    {
+        "url": "admin/stockyard/transfer",
+        "name": "Transfer",
+        "icon": "truck",
+        "slug": "",
+        "submenu":[
+            {
+                "url": "stockyard/inward-rcn",
+                "name": "Inward RCN",
+                "icon": "droplet",
+                "slug": "stockyard.inward-rcn.*",
+                "acl": "stockyard-inward-rcn-view"
+            },
+            {
+                "url": "stockyard/outward-rcn",
+                "name": "Outward RCN",
+                "icon": "droplet",
+                "slug": "stockyard.outward-rcn.*",
+                "acl": "stockyard-outward-rcn-view"
+            }
+        ]
+    }
+  ]
+}

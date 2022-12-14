@@ -1,0 +1,47 @@
+{
+    "menu": [
+    {
+        "name": "Dashboard",
+        "icon": "home",
+        "slug": "dashboard",
+        "url": "/admin"
+    },
+    {
+        "name": "Transfer",
+        "icon": "home",
+        "slug": "dashboard",
+        "url": "/admin"
+    },
+    {
+        "name": "Purchase",
+        "icon": "home",
+        "slug": "dashboard",
+        "url": "/admin"
+    },
+    {
+        "name": "Quality Analysis",
+        "icon": "home",
+        "slug": "dashboard",
+        "url": "/admin"
+    },
+    {
+        "name": "Stock",
+        "icon": "home",
+        "slug": "dashboard",
+        "submenu": [
+        {
+          "url": "app/email",
+          "name": "Graded Kernels",
+          "icon": "mail",
+          "slug": "app-email"
+        },
+        {
+          "url": "app/email",
+          "name": "Packed Graded Kernels",
+          "icon": "mail",
+          "slug": "app-email"
+        }
+      ]
+    }
+  ]
+}

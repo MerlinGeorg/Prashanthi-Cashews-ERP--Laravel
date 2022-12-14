@@ -1,0 +1,85 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+    border-color: #ea5455 !important;
+}
+
+span.form-control {
+    background-color: transparent;
+    border: 1px solid #404656;
+    color: #b4b7bd;
+    min-height: 40px;
+    margin-bottom: 10px;
+}
+
+form span.error {
+    display: inline-block;
+}
+
+.dropdown-menu .user-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    color: #c5c7cd;
+}
+
+.badge {
+    margin-bottom: 5px;
+    cursor: default;
+}
+
+.light-layout .main-menu-content .navigation-main .nav-item .menu-content li,
+.dark-layout .main-menu-content .navigation-main .nav-item .menu-content li {
+    margin-left: 30px;
+}
+
+.main-menu .navigation>li ul li>a {
+    padding: 10px 15px !important;
+}
+
+.main-menu .navigation>li>ul li.has-sub>a {
+    margin-right: 15px !important;
+    margin-left: 0px !important;
+}
+
+.nav-item .menu-content .has-sub .menu-content li {
+    margin-left: 15px !important;
+}
+
+.navigation-main .dropdown.has-sub.sidebar-group-active.open {
+    border-bottom: solid 2px #323a4d;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.swal2-title {
+    color: #595959 !important;
+}
+
+.dark-layout .select2-container .select2-dropdown {
+    box-shadow: 0px 0px 2px #28c76f !important;
+}
+
+span.form-control {
+    border: 1px solid #161c31;
+    cursor: not-allowed;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    box-shadow: 0px 0px 2px #d8d6de;
+}
+
+/** Popup Design ****/
+.dark-layout .modal .modal-content{
+    box-shadow: 0px 4px 10px 0px #000;
+}

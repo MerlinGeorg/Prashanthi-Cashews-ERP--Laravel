@@ -1,0 +1,100 @@
+{
+    "menu": [
+    {
+        "name": "Dashboard",
+        "icon": "home",
+        "slug": "dashboard",
+        "url": "/admin"
+    },
+    {
+      "name": "Manage",
+      "icon": "package",
+      "dropdown": "1",
+      "slug": "",
+      "submenu": [
+        {
+          "url": "app/email",
+          "name": "Employee",
+          "icon": "users",
+          "slug": "app-email"
+        }
+      ]
+    },
+    {
+        "url": "admin/factory/transfer",
+        "name": "Transfer",
+        "icon": "truck",
+        "slug": "",
+        "submenu":[
+                {
+                    "url": "factory/factory-rcn-inward",
+                    "name": "Inward RCN",
+                    "icon": "droplet",
+                    "slug": "factory.factory-rcn-inward.*",
+                    "acl": "factory-inward-rcn-view"
+                }
+            ]
+    },
+    {
+        "name": "Purchase",
+        "icon": "home",
+        "slug": "dashboard",
+        "url": "/admin"
+    },
+    {
+        "name": "Stock",
+        "icon": "home",
+        "slug": "dashboard",
+        "submenu":[
+            {
+                "url": "app/chat",
+                "name": "RCN",
+                "icon": "message-square",
+                "slug": "app-chat"
+            },
+            {
+                "url": "app/chat",
+                "name": "Sizering",
+                "icon": "message-square",
+                "slug": "app-chat"
+            },
+            {
+                "url": "app/chat",
+                "name": "Boiling",
+                "icon": "message-square",
+                "slug": "app-chat"
+            },
+            {
+                "url": "app/chat",
+                "name": "Cutting",
+                "icon": "message-square",
+                "slug": "app-chat"
+            },
+            {
+                "url": "app/chat",
+                "name": "Borma",
+                "icon": "message-square",
+                "slug": "app-chat"
+            },
+            {
+                "url": "app/chat",
+                "name": "Machine Peeling",
+                "icon": "message-square",
+                "slug": "app-chat"
+            },
+            {
+                "url": "app/chat",
+                "name": "Sorting",
+                "icon": "message-square",
+                "slug": "app-chat"
+            },
+            {
+                "url": "app/chat",
+                "name": "Peeling Pass",
+                "icon": "message-square",
+                "slug": "app-chat"
+            }
+        ]
+    }
+  ]
+}
